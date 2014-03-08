@@ -1,0 +1,33 @@
+
+
+/**
+ * NPS CSS Companion
+ */
+
+p{
+	font-size: 12pt;
+	font-family: Verdana;
+	line-height: 140%;
+	color: #4A44A;
+}
+
+/**
+ * HTML5 doesn't do <strike> so we have to
+ * make sure it exists
+ */
+strike{
+	display: inline;
+	text-decoration: line-through;
+}
+
+a{
+	text-decoration: none;
+	color: #05C9F5;
+}
+
+a:hover{
+	color: #00ADD;
+	}
+a:visited{
+	color: #F73E9B;
+	}
