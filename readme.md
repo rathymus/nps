@@ -190,14 +190,14 @@ But:
 
 Notice in the first two examples there's no need to explicitly tell NPS about
 a link; as long as a URL starts with a recognized protocol, NPS will figure it
-out.
+out. Recognized protocols are
 
-Recognized protocols are
 * `http(s)://`
 * `ftp(s)://`
 
 Don't try and be clever by doing something like
-`[http://evil.com http://example.com]` - that's undefined behaviour.
+`[http://evil.com http://example.com]` - that's undefined behaviour, explicitly
+so, to prevent attacks like this.
 
 The URL should't contain whitespace. That character should be inserted in its
 hex representation `%20`. If you copy a URL that contains spaces from a modern
